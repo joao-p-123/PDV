@@ -22,6 +22,9 @@ namespace PDV
 
         }
 
-       
+        private void ImgBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

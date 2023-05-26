@@ -100,11 +100,14 @@
             // 
             // ImgBox2
             // 
+            this.ImgBox2.Image = global::PDV.Properties.Resources.icons8_shopping_cart_50px;
             this.ImgBox2.Location = new System.Drawing.Point(140, 38);
             this.ImgBox2.Name = "ImgBox2";
-            this.ImgBox2.Size = new System.Drawing.Size(237, 156);
+            this.ImgBox2.Size = new System.Drawing.Size(212, 156);
+            this.ImgBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ImgBox2.TabIndex = 2;
             this.ImgBox2.TabStop = false;
+            this.ImgBox2.Click += new System.EventHandler(this.ImgBox2_Click);
             // 
             // ImgBox3
             // 
@@ -128,9 +131,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ImgBox2);
             this.Controls.Add(this.ImgBox4);
             this.Controls.Add(this.ImgBox3);
-            this.Controls.Add(this.ImgBox2);
             this.Controls.Add(this.ImgBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
