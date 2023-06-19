@@ -26,5 +26,21 @@ namespace PDV
         {
 
         }
+
+        private void movimentaçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menusair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Menufuncionarios_Click(object sender, EventArgs e)
+        {
+            Cadastro.frmFuncionarios frm = new Cadastro.frmFuncionarios();
+            frm.ShowDialog();
+        }
     }
 }
