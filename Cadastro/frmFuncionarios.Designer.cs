@@ -166,6 +166,7 @@
             this.btnSalvar.TabIndex = 13;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnNovo
             // 
@@ -193,6 +194,7 @@
             this.btnExcluir.TabIndex = 16;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // frmFuncionarios
             // 
@@ -218,6 +220,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmFuncionarios";
             this.Text = "Cadastro Funcionario";
+            this.Load += new System.EventHandler(this.frmFuncionarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
