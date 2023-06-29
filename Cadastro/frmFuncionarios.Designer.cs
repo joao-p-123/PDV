@@ -39,13 +39,14 @@
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.txtEndereço = new System.Windows.Forms.TextBox();
             this.CombCargo = new System.Windows.Forms.ComboBox();
-            this.img = new System.Windows.Forms.PictureBox();
+            this.image = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.img)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,13 +140,13 @@
             this.CombCargo.Size = new System.Drawing.Size(154, 21);
             this.CombCargo.TabIndex = 10;
             // 
-            // img
+            // image
             // 
-            this.img.Location = new System.Drawing.Point(627, 9);
-            this.img.Name = "img";
-            this.img.Size = new System.Drawing.Size(130, 126);
-            this.img.TabIndex = 11;
-            this.img.TabStop = false;
+            this.image.Location = new System.Drawing.Point(627, 9);
+            this.image.Name = "image";
+            this.image.Size = new System.Drawing.Size(130, 126);
+            this.image.TabIndex = 11;
+            this.image.TabStop = false;
             // 
             // dataGridView1
             // 
@@ -196,17 +197,28 @@
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(561, 35);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(60, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.img);
+            this.Controls.Add(this.image);
             this.Controls.Add(this.CombCargo);
             this.Controls.Add(this.txtEndereço);
             this.Controls.Add(this.txtTelefone);
@@ -221,7 +233,7 @@
             this.Name = "frmFuncionarios";
             this.Text = "Cadastro Funcionario";
             this.Load += new System.EventHandler(this.frmFuncionarios_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -241,11 +253,12 @@
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.TextBox txtEndereço;
         private System.Windows.Forms.ComboBox CombCargo;
-        private System.Windows.Forms.PictureBox img;
+        private System.Windows.Forms.PictureBox image;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button button1;
     }
 }
